@@ -6,19 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #para{
+        #para {
             display: none;
+        }
+
+        input {
+            margin-top: 5px;
+        }
+
+        button {
+            margin-top: 5px;
         }
     </style>
 </head>
 
 <body>
-        <input type="text" placeholder="First Name" id="name" required>
-        <input type="text" placeholder="Last Name" id="last-name" required>
-        <input type="password" placeholder="password" id="password" required>
-        <input type="password" placeholder="confirm password" id="conf-password" required>
-        <p id="para"></p>
-        <button onclick="addData()">submit</button>
+
+    <input type="text" placeholder="First Name" id="name">
+    <input type="text" placeholder="Last Name" id="last-name"> <br>
+    <input type="email" placeholder="Email Address" id="email"> <br>
+    <input type="password" placeholder="password" id="password"> <br>
+    <input type="password" placeholder="confirm password" id="conf-password"> <br>
+    <input type="radio" id="term"> <label for="term">I accept the <a href="#">Term of use</a> & <a href="#">privacy policy</a></label> <br>
+    <p id="para"></p>
+    <button onclick="addData()">submit</button>
+
 
     <script src="app.js"></script>
 </body>
